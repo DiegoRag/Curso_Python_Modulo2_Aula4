@@ -1,0 +1,110 @@
+como criar uma pasta no cmd windows
+
+entrar na pasta de documentos:
+cd C:\Users\"Seu usuario"\Documents
+
+estando nesse diretorio:
+
+C:\Users\"Seu usuario"\Documents mkdir "nome da pasta"
+
+para listar tudo o que tem dentro de um diretorio digite:
+
+dir 
+
+para criar um ambiente virtual python atraves do cmd no windows:
+
+python -m venv env
+
+faça isso dentro da pasta do seu projeto, assim da forma como criamos anteriormente
+
+para ativar o ambiente faca isso
+
+env\Scripts\activate
+
+para desativar
+
+env\Scripts\deactivate
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+flask
+
+para iniciar o seu server flask
+
+set FLASK_APP=app
+*enter*
+
+FLASK run
+//////////////////////////////////////////////////////////////////////////////////////////////
+para ativar modo de desenvolvimento no flask coloque no cmd com o ambiente ativado
+
+para windows
+
+set FLASK_APP=development
+
+para linux
+
+export FLASK_APP=development
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+para adicionar uma rota no flask:
+
+exemplo:
+
+@app.route("/sobre")
+def sobre():
+    return "Curso muito bem do bom"
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+como ativar o git no seu projeto python
+com o env ativado:
+
+git init
+
+para listar os diretorios do git 
+cd git 
+.git
+
+antes de fazer um commit para gerar um pré versionamento
+adicione os arquivos ao git:
+
+git add .
+
+agora para fazer o commit
+
+git commit -m "First commit"
+
+mas como boa pratica adicione -m "Nome que voce quiser"
+
+o -m é tipo um nome/mensagem
+
+caso seja o primeiro commit deixa essa mensagem "First commit"
+
+depois crie um branch, caso seja a primeira coloque assim
+
+git branch -m main 
+
+caso nao seja coloque outro nome
+
+as branchs vao se tornar ao longo do tempo ramificacoes da branch principal
+
+agora para conectar seu computador ao git coloque git remote add origin "https ou ssh"
+
+agora para enviar seu projeto para o git:
+
+git push -u origin main
+
+agora suponhamos que voce alterou um arquivo e quer subir ele pro repositorio para manter ele versionado
+
+depois de ter alterado a primeira coisa que voce vai fazer é:
+
+git add .
+
+git status
+para ver se o arquivo foi modificado
+
+git commit -m "Alteracao de versao" (ou o nome que voce preferir para sua alteracao
+
+git push -u origin main(isso claro se voce for salvar no branch main)
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+para baixar um repositorio em casa:
+
+git clone "link do repositorio em https ou ssh"
