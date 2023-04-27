@@ -1,4 +1,4 @@
-como criar uma pasta no cmd windows
+ncomo criar uma pasta no cmd windows
 
 entrar na pasta de documentos:
 cd C:\Users\"Seu usuario"\Documents
@@ -60,7 +60,6 @@ if __name__ == "__main__":
     app.run(debug=True)
 	
 dessa forma voce pode iniciar o servidor apenas clicando o start do vscode
-
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
