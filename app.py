@@ -1,11 +1,11 @@
 #Comentario nova versao
-from flask import Flask
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
 @app.route("/")
-def curso():
-    return "curso de python turma dois bem bom"
+def index():
+    return "aaaa"
 
 @app.route("/produtos")
 def produtos():
@@ -15,3 +15,5 @@ def produtos():
 def sobre():
     return "Curso muito bem do bom"
 
+if __name__ == "__main__":
+    app.run(debug=True)

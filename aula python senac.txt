@@ -53,6 +53,17 @@ exemplo:
 def sobre():
     return "Curso muito bem do bom"
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+Forma de alternativa de abrir o python ja em modo debug
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
+	
+dessa forma voce pode iniciar o servidor apenas clicando o start do vscode
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
 como ativar o git no seu projeto python
 com o env ativado:
 
